@@ -24,6 +24,10 @@ This repo is designed to provide space to code a fullstack app. It contains node
   - When running knex, run `npm run knex <command>`, e.g. `npm run knex migrate:latest` rather than using `npx`
   - When running webpack, run `npm run webpack <extra commands>`, e.g. `npm run webpack`, rather than using `npx`
 </details>
+<details>
+  <summary>More about using SCSS</summary>
+    Instead of writing your styles in a <code>.css</code> file in your <code>server/public</code> folder, you'll need to write them in a <code>.scss</code> file in the <code>client/styles</code> folder. 
+</details>
 
 ---
 
