@@ -19,10 +19,11 @@ This repo is designed to provide space to code a fullstack app. It contains node
   </details>
 
 <details>
-  <summary>More about using <code>npm</code> vs <code>npx</code></summary>
+  <summary>More about using <code>.scss</code> files</summary>
 
-  - When running knex, run `npm run knex <command>`, e.g. `npm run knex migrate:latest` rather than using `npx`
-  - When running webpack, run `npm run webpack <extra commands>`, e.g. `npm run webpack`, rather than using `npx`
+  - Any css should be written in `styles/index.scss`
+  - The when the project bundles, a <code>.css</code> file will be created in the public folder. Each time the project bundles this file will be overwritten to match the css within your styles folder.
+  - You can use normal css styling or make use of the extra features of [sass](https://sass-lang.com/documentation/)
 </details>
 
 ---
