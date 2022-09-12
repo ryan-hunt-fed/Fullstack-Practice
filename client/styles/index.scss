@@ -27,11 +27,34 @@ body {
   height: auto;
 }
 
-.items {
-  display: flex;
-  flex-direction: column;
-  // flex-wrap: wrap;
+.items-container {
+  display: inline-block;
+  // display: flex;
+  // flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.child-items {
+  display: flex;
+  // flex:1;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.child-items:first-child{
+  margin-right: 20px;
+}
+
+.add{
+  text-align: center;
+}
+
+.form {
+  background-color: lightcoral;
+  padding: 15px 50px;
 }
 

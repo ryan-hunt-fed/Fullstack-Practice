@@ -7,12 +7,14 @@ function Games() {
   
 //   console.log(gameData)
   
-//   const [game, setGame] = useState([])
+
 //   useEffect(async () => {
 //     const arr = await getGamesApi()
 //     setGame(arr)  
 //   },[])
 //   console.log('in games component',game)
+
+    
   
     return (
     <>
@@ -21,11 +23,13 @@ function Games() {
             
             return (
                 <>
-                <div className='items' key={idx}>
-                <img className='images' src={`/images/${game.image}`} />
-                <h3>{game.title}</h3>
-                <p>Type: {game.genre}</p>
-                <p>Release Date: {game.released}</p>
+                <div className='items-container' key={idx}>
+                    <div className='child-items'>
+                        <img className='images' src={`/images/${game.image}`} />
+                        <h3>{game.title}</h3>
+                        <p>Type: {game.genre}</p>
+                        <p>Release Date: {game.released}</p>
+                    </div>
                 </div>
                 </>
             )
