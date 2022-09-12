@@ -1,12 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useDispatch } from 'react-redux'
+import { fetchGames } from '../actions/gamesAct'
+import Header from './Header'
+import Games from './Games'
 
 function App() {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(fetchGames())
+  })
+  
+  
   return (
     <>
-      <header className="header">
-        <h1>My Collection</h1>
-      </header>
-      <section className="main">{/* add your code here */}</section>
+      <Header />
+      <section className="main">
+        {/* add your code here */}
+        <Games />
+        </section>
     </>
   )
 }
