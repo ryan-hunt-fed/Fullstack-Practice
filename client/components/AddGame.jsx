@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
+import {useDispatch} from 'react-redux'
+import { addGame } from '../actions/gamesAct'
 
 
 function AddGames() {
+const dispatch = useDispatch()
 
 const [game, setGame] = useState([])
 
 const formSubmit = async (e) => {
     e.preventDefualt()
-    
-    
+    dispatch(addGame(game))
 }
 
 const submitType = (e) => {
@@ -17,8 +19,6 @@ const submitType = (e) => {
         [e.target.value]: e.target.value
     })
 }
-
-
 
 
 return (
@@ -41,9 +41,6 @@ return (
         <button>Save</button>
     </form>
  </div>
-
-
-
 
 )
 }

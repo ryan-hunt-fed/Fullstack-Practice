@@ -15,6 +15,6 @@ exports.seed = async function(knex) {
     {id: 7, title: 'Halo 2', released: '9th November, 2004', genre: 'FPS', image: 'halo2.jpg' },
     {id: 8, title: 'Halo 3', released: '25th September, 2007', genre: 'FPS', image: 'halo3.png' },
     {id: 9, title: 'Halo Reach', released: '14th September, 2010', genre: 'FPS', image: 'Reach.jpeg' },
-    {id: 10, title: 'Star Wars Knights of the Old Republic 2: Sith Lords', released: '6th December, 2004', genre: 'RPG', image: 'knights-of-the-old.jpeg' },
+    {id: 10, title: 'Star Wars Knights of the Old Republic 2', released: '6th December, 2004', genre: 'RPG', image: 'knights-of-the-old.jpeg' },
   ]);
 };

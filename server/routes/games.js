@@ -13,4 +13,14 @@ router.get('/', (req,res) => {
     })
 })
 
+router.post('/', (req, res) => {
+    db.newGame(data)
+    .then(() => {
+        
+    })
+    .catch((err) => {
+        console.log(err.message) 
+    })
+})
+
 module.exports = router

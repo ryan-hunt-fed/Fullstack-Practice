@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 20px;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: lightcyan;
+  background-color: #102D35;
+  color: #FDFDFD;
 }
 .main{
   display: flex;
@@ -13,18 +14,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.header h1 {
+.header {
   // display: flex;
   text-align: center;
+  padding: 5px;
+  margin: 10px;
 }
 
-.header h3 {
-  text-align: center;
-}
+// .header h4 {
+//   text-align: center;
+// }
 
 .images {
-  width: 300px;
-  height: auto;
+  width: auto;
+  height: 350px;
+  border-radius: 5px;
 }
 
 .items-container {
@@ -43,6 +47,12 @@ body {
   
   justify-content: center;
   align-items: center;
+  // background-color: #0274BA;
+  background: rgb(183,235,236);
+  background: linear-gradient(0deg, rgba(183,235,236,0.871608018207283) 0%, rgba(2,116,186,1) 63%);
+  border-radius: 5px;
+  gap: 10px;
+  margin: 20px 20px;
 }
 
 .child-items:first-child{
@@ -54,7 +64,17 @@ body {
 }
 
 .form {
-  background-color: lightcoral;
+  // background-color: #00A1CF;
   padding: 15px 50px;
+  border-radius: 5px ;
+  background: rgb(183,235,236);
+  background: linear-gradient(0deg, rgba(183,235,236,0.871608018207283) 0%, rgba(0,161,207,1) 63%);
+}
+
+button {
+  background-color: lightcoral;
+  border-radius: 5px;
+  color:white;
+
 }
 
