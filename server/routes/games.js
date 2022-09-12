@@ -14,9 +14,10 @@ router.get('/', (req,res) => {
 })
 
 router.post('/', (req, res) => {
+    const {title, genre, released, image} = res.body
     db.newGame(data)
     .then(() => {
-        
+
     })
     .catch((err) => {
         console.log(err.message) 
