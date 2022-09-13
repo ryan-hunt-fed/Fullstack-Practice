@@ -5,7 +5,7 @@ const con = knex(config[env])
 
 function getGame(db = con) {
     return db('collection')
-    // .select()
+    
 }
 
 function newGame(data, db=con) {

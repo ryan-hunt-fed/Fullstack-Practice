@@ -9,7 +9,7 @@ const dispatch = useDispatch()
 const [game, setGame] = useState([])
 
 const formSubmit = () => {
-    console.log('form submit', game)
+    // console.log('form submit', game)
     dispatch(fetchAddGame(game))
 }
 

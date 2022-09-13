@@ -39,7 +39,7 @@ export function addGame(data) {
 
 export function fetchAddGame(data) {
     return (dispatch) => {
-        console.log('Thunk add', data)
+        // console.log('Thunk add', data)
         return addGameApi(data)
         .then((game) => {
             dispatch(addGame(game))

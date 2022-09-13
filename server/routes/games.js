@@ -5,7 +5,7 @@ const router = express.Router()
 router.get('/', (req,res) => {
     db.getGame()
     .then((game) => {
-        // console.log('in routes', game)
+        
         res.json(game)
     })
     .catch((err) => {
@@ -15,7 +15,7 @@ router.get('/', (req,res) => {
 
 router.post('/', (req, res) => {
     const {title, genre, released, image} = req.body
-    console.log(req.body)
+    // console.log(req.body)
     const data = {title, genre, released, image}
     db.newGame(data)
         .then((idArr) => {
@@ -31,8 +31,10 @@ router.post('/', (req, res) => {
 })
 
 router.delete('/:id', (req,res) => {
-    // const {id} = req.body
+    // const {id} = req.body 
+    // console.log('in server side route', req.body)
     const id = req.params.id
+    console.log(id)
     db.delGame(id)
     .then(() => {
         db.getGame()

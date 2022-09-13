@@ -8,7 +8,7 @@ exports.seed = async function(knex) {
   await knex('collection').insert([
     {id: 1, title: 'Mass Effect 1', released: '20th November, 2007', genre: 'RPG', image: 'https://m.media-amazon.com/images/M/MV5BZjQxMThjZjAtNzZmMy00ODViLWFjNDAtMDJiOWUxZTQ0OGRiXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg' },
     {id: 2, title: 'Mass Effect 2', released: '26th January, 2010', genre: 'RPG', image: 'https://m.media-amazon.com/images/M/MV5BMjE4MTQwMjM1N15BMl5BanBnXkFtZTcwNjMzNjc2Mw@@._V1_.jpg' },
-    {id: 3, title: 'Mass Effect 3', released: '6th March, 2012', genre: 'RPG', image: 'https://harrison101hd.files.wordpress.com/2013/07/images1.jpg' },
+    {id: 3, title: 'Mass Effect 3', released: '6th March, 2012', genre: 'RPG', image: 'https://www.giantbomb.com/a/uploads/original/3/30036/1805388-me3ba.jpg' },
     {id: 4, title: 'Dragon Age: Origins', released: '3rd November, 2009', genre: 'RPG', image: 'https://images.g2a.com/600x900/1x1x0/dragon-age-origins-ultimate-edition-pc-gogcom-key-global/5ecf63e77e696c714b168903' },
     {id: 5, title: 'Tales of Arise', released: '9th September, 2021', genre: 'JRPG', image: 'https://image.api.playstation.com/vulcan/img/rnd/202107/2810/YRnlfjEwzN7CIq8NgWUHywNh.png' },
     {id: 6, title: 'Batman Arkham City', released: '18th October, 2011', genre: 'Action', image: 'https://m.media-amazon.com/images/M/MV5BZDE2ZDFhMDAtMDAzZC00ZmY3LThlMTItMGFjMzRlYzExOGE1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg' },

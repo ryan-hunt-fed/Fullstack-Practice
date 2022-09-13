@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 body {
   // position: absolute;
   top: 0;
@@ -9,7 +11,7 @@ body {
   color: #FDFDFD;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,8 +37,8 @@ body {
 }
 
 .items-container {
-  // display: inline-block;
   display: inline-flex;
+  // display: grid;
   // display: flex;
   // flex-direction: row;
   flex-wrap: wrap;
@@ -52,7 +54,6 @@ body {
   background: rgb(183,235,236);
   background: linear-gradient(0deg, rgba(183,235,236,0.871608018207283) 0%, rgba(2,116,186,1) 63%);
   border-radius: 5px;
-  gap: 10px;
   margin: 20px 20px;
   padding: 5px;
   box-shadow: 5px 5px #354247;
