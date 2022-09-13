@@ -15,6 +15,6 @@ exports.seed = async function(knex) {
     {id: 7, title: 'Halo 2', released: '9th November, 2004', genre: 'FPS', image: 'https://m.media-amazon.com/images/M/MV5BOWNiMDM1N2UtMjZkZi00NjhlLTllNzMtZjEzNDk3NDBiZGVhXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg' },
     {id: 8, title: 'Halo 3', released: '25th September, 2007', genre: 'FPS', image: 'https://store-images.s-microsoft.com/image/apps.32635.13744479854832406.0affa1b0-655f-49af-ab66-9c9ccd71090c.75be220c-443f-4f73-b3af-4dfcd5da2e9c' },
     {id: 9, title: 'Halo Reach', released: '14th September, 2010', genre: 'FPS', image: 'https://www.mobygames.com/images/covers/l/638868-halo-the-master-chief-collection-halo-reach-xbox-one-front-cover.jpg' },
-    {id: 10, title: 'Star Wars Knights of the Old Republic 2', released: '6th December, 2004', genre: 'RPG', image: 'https://cdn.cdkeys.com/500x706/media/catalog/product/c/o/co2228_13_.jpg' },
+    {id: 10, title: 'Star Wars Knights of the Old Republic 2', released: '6th December, 2004', genre: 'RPG', image: 'https://e.snmc.io/lk/g/x/62b9dcdb31c1e090126e8d9cc2cc0bf3/6852262' },
   ]);
 };
