@@ -14,14 +14,20 @@ router.get('/', (req,res) => {
 })
 
 router.post('/', (req, res) => {
-    const {title, genre, released, image} = res.body
+    const {title, genre, released, image} = req.body
+    console.log(req.body)
+    const data = {title, genre, released, image}
     db.newGame(data)
-    .then(() => {
-
-    })
-    .catch((err) => {
-        console.log(err.message) 
-    })
+        .then((idArr) => {
+            const id = idArr[0]
+            db.getOneGame(id)
+            .then ((oneGame) => {
+              res.json(oneGame)
+            })
+        })
+        .catch((err) => {
+            console.log(err.message) 
+        })
 })
 
 module.exports = router

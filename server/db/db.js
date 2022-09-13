@@ -13,7 +13,15 @@ function newGame(data, db=con) {
     .insert(data)
 }
 
+function getOneGame(id, db=con) {
+    return db('collection')
+    .select()
+    .where('id',id)
+    .first()
+}
+
 module.exports = {
     getGame,
-    newGame
+    newGame,
+    getOneGame
 }

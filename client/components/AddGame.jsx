@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import {useDispatch} from 'react-redux'
-import { addGame } from '../actions/gamesAct'
+import { useDispatch } from 'react-redux'
+import { fetchAddGame } from '../actions/gamesAct'
 
 
 function AddGames() {
@@ -8,37 +8,36 @@ const dispatch = useDispatch()
 
 const [game, setGame] = useState([])
 
-const formSubmit = async (e) => {
-    e.preventDefualt()
-    dispatch(addGame(game))
+const formSubmit = () => {
+    console.log('form submit', game)
+    dispatch(fetchAddGame(game))
 }
 
-const submitType = (e) => {
+const submitChange = (e) => {
     setGame({
         ...game, 
-        [e.target.value]: e.target.value
+        [e.target.name]: e.target.value,
     })
 }
-
 
 return (
 
     <div className='form'>
         <p className='add'>Add a Game</p>
     <form onSubmit={formSubmit}>
-        <label> Title
-            <input type='text' name='title' onChange={submitType} />
+        <label> Title:
+            <input type='text' name='title' onChange={submitChange} />
         </label>
-        <label> Type
-            <input type='text' name='title' onChange={submitType} />
+        <label> Genre:
+            <input type='text' name='genre' onChange={submitChange} />
         </label>
-        <label> Release Date
-            <input type='text' name='title' onChange={submitType} />
+        <label> Release Date:
+            <input type='text' name='released' onChange={submitChange} />
         </label>
-        <label> Image
-            <input type='url' name='title' onChange={submitType} />
+        <label> Image:
+            <input type='text' name='image' onChange={submitChange} />
         </label>
-        <button>Save</button>
+        <button>Save Game</button>
     </form>
  </div>
 

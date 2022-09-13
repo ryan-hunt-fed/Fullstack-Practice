@@ -1,18 +1,11 @@
-import React, {useEffect} from 'react'
-import { useDispatch } from 'react-redux'
-import { fetchGames } from '../actions/gamesAct'
+import React from 'react'
 import Header from './Header'
 import Games from './Games'
 import AddGames from './AddGame'
 
 
 function App() {
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(fetchGames())
-  })
-  
-  
+ 
   return (
     <>
       <Header />
