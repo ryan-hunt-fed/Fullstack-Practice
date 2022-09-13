@@ -1,5 +1,7 @@
 import request from 'superagent'
 
+
+//show game
 export function getGamesApi() {
     return request.get('/v1/games/')
     .then((resp) => {
@@ -19,10 +21,20 @@ export function getGamesApi() {
 //     return req.body
 //   }
 
+
+// add game
   export function addGameApi(data) {
     return request.post('/v1/games').send(data)
     .then((resp) => {
         return resp.body
+    })
+  }
+
+  // delete game 
+  export function delGameApi(id) {
+    return request.delete('/v1/games' + id)
+    .then((resp) => {
+      return resp.body
     })
   }
 

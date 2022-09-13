@@ -20,8 +20,16 @@ function getOneGame(id, db=con) {
     .first()
 }
 
+function delGame(id, db=con){
+    return db('collection')
+    .del()
+    .where('id',id)
+
+}
+
 module.exports = {
     getGame,
     newGame,
-    getOneGame
+    getOneGame,
+    delGame
 }

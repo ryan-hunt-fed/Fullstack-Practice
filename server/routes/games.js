@@ -30,4 +30,16 @@ router.post('/', (req, res) => {
         })
 })
 
+router.delete('/:id', (req,res) => {
+    // const {id} = req.body
+    const id = req.params.id
+    db.delGame(id)
+    .then(() => {
+        db.getGame()
+        .then((game) => {
+            res.json(game)
+        })
+    })
+})
+
 module.exports = router

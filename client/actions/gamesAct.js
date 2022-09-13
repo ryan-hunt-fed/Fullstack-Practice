@@ -1,7 +1,8 @@
-import { addGameApi, getGamesApi } from "../apis/gameAPI";
+import { addGameApi, getGamesApi, delGameApi } from "../apis/gameAPI";
 
 export const SHOW_GAME = 'SHOW_GAME'
 export const ADD_GAME = 'ADD_GAME'
+export const DEL_GAME = 'DEL_GAME'
 
 
 //action show
@@ -42,6 +43,26 @@ export function fetchAddGame(data) {
         return addGameApi(data)
         .then((game) => {
             dispatch(addGame(game))
+        })
+    }
+}
+
+//action delete
+
+export function delGame(id) {
+    return {
+        type: DEL_GAME,
+        payload: id,
+    }
+}
+
+//thunk delete
+
+export function fetchDelGame(id) {
+    return (dispatch) => {
+        return delGameApi(id)
+        .then(() => {
+            dispatch(delGame(id))
         })
     }
 }

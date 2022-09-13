@@ -1,4 +1,4 @@
-import { SHOW_GAME, ADD_GAME } from "../actions/gamesAct";
+import { SHOW_GAME, ADD_GAME, DEL_GAME } from "../actions/gamesAct";
 
 const initalState = []
 
@@ -9,6 +9,8 @@ const gamesRedu = (state = initalState, action) => {
             return  payload
         case ADD_GAME:
             return [...state, payload]
+        case DEL_GAME:
+            return state.filter((game) => !game.id === payload.id)
         default:
             return state
     }
