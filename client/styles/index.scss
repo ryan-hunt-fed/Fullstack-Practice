@@ -40,7 +40,7 @@ body {
   display: inline-flex;
   // display: grid;
   // display: flex;
-  // flex-direction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -57,6 +57,11 @@ body {
   margin: 20px 20px;
   padding: 5px;
   box-shadow: 5px 5px #354247;
+}
+
+.child-items:hover {
+  background: rgb(183,235,236);
+  background: linear-gradient(0deg, rgba(182, 66, 153, 0.872) 0%, rgb(186, 171, 2) 63%);
 }
 
 .add{
