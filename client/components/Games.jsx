@@ -12,33 +12,25 @@ function Games() {
 
     return (
         <>
-            <div>
+            <div className='items-container'>
                 {gameData.map((game, idx) => {
 
                     return (
                         <>
-                            <div className='items-container'>
-
-                                <div className='child-items' key={idx}>
-                                    <img className='images' src={`${game.image}`} />
-                                    <h3>{game.title}</h3>
-                                    <p>Genre: {game.genre}</p>
-                                    <p>Release Date: {game.released}</p>
-                                    <button onClick={(e) => {
-                                        e.preventDefault()
-                                        dispatch(fetchDelGame(game.id))
-                                    }}>Delete Game</button>
-
-                                </div>
-
+                            <div className='child-items' key={idx}>
+                                <img className='images' src={`${game.image}`} />
+                                <h3>{game.title}</h3>
+                                <p>Genre: {game.genre}</p>
+                                <p>Release Date: {game.released}</p>
+                                <button onClick={(e) => {
+                                    e.preventDefault()
+                                    dispatch(fetchDelGame(game.id))
+                                }}>Delete Game</button>
                             </div>
                         </>
                     )
-
                 })}
-
             </div>
-
         </>
     )
 }

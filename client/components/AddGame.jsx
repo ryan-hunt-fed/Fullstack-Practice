@@ -8,8 +8,9 @@ const dispatch = useDispatch()
 
 const [game, setGame] = useState([])
 
-const formSubmit = () => {
+const formSubmit = (evt) => {
     // console.log('form submit', game)
+    evt.preventDefault()
     dispatch(fetchAddGame(game))
 }
 
