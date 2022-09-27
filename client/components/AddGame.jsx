@@ -24,7 +24,7 @@ const submitChange = (e) => {
 return (
 
     <div className='form'>
-        <p className='add'>Add a Game</p>
+        <p className='add-header'>Add a Game</p>
     <form onSubmit={formSubmit}>
         <label> Title:
             <input type='text' name='title' onChange={submitChange} />

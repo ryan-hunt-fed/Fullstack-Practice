@@ -10,8 +10,7 @@ const gamesRedu = (state = initalState, action) => {
         case ADD_GAME:
             return [...state, payload]
         case DEL_GAME:
-            console.log(state)
-            return state.filter((game) => !game.id === payload.id)
+            return state.filter((game) => game.id !== payload)
         default:
             return state
     }

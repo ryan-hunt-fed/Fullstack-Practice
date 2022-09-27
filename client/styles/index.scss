@@ -36,8 +36,6 @@ body {
 }
 
 .items-container {
-  // display: inline-flex;
-  // display: grid;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -63,7 +61,7 @@ body {
   background: linear-gradient(0deg, rgba(182, 66, 153, 0.872) 0%, rgb(186, 171, 2) 63%);
 }
 
-.add{
+.add-header{
   text-align: center;
   font-weight: bold;
 }
