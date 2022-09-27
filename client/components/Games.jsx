@@ -11,10 +11,6 @@ function Games() {
         dispatch(fetchGames())
     }, [])
 
-    useEffect(() => {
-        // dispatch(fetchGames())
-    }, [gameData])
-
     return (
         <>
             <div className='items-container'>

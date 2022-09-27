@@ -15,14 +15,9 @@ function App() {
       <Header />
       <Nav />
       <section className="main">
-        {/* add your code here */}
+       
         <Games />
         <AddGames />
-        {/* WIP */}
-        {/* <Routes>
-          <Route path='/' element={</>}/>
-          <Route path='/game/:id' element={<GameDetails/>}/>         
-        </Routes> */}
         </section>
     </>
   )
